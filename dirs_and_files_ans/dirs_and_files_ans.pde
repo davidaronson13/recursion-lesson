@@ -66,12 +66,7 @@ void print_files(String path, String prefix){
     prefix = "| ";
   }
   File[] dirlist = get_dirlist(path); 
-  for (File f : dirlist){
-    println(prefix + f.getName()); // The base case is printing out the file name
-    if (f.isDirectory()) {
-      print_files(f.getAbsolutePath(),prefix + "| ");
-  }
-  }
+ 
   
   
 }
