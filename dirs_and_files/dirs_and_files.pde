@@ -5,7 +5,7 @@ void setup(){
    //use the path of this sketch for now
  //String path = sketchPath(); 
   //String path = "C:\\Users\\teach\\Documents";  
-  String path = "D:\\Git Hub\\recursion-lesson\\recursion-lesson";
+  String path = "C:\\Users\\teach\\Documents\\Zoom";
   //String[] localnames = get_dirlist(path);
   //printArray(localnames);
   
