@@ -3,8 +3,9 @@ import java.util.Arrays;
 
 void setup(){
    //use the path of this sketch for now
-  String path = sketchPath(); 
+ //String path = sketchPath(); 
   //String path = "C:\\Users\\teach\\Documents";  
+  String path = "D:\\Git Hub\\recursion-lesson\\recursion-lesson";
   //String[] localnames = get_dirlist(path);
   //printArray(localnames);
   
@@ -40,29 +41,13 @@ void print_files(String path, String prefix){
     println("Folder listing for path: " + path);
     prefix = "| ";
   }
-  File[] dirlist = get_dirlist(path);
+  File[] dirlist = get_dirlist(path); 
   for (File f : dirlist){
-    println(prefix + f);
+    println(prefix + f.getName()); // The base case is printing out the file name
     if (f.isDirectory()) {
       print_files(f.getAbsolutePath(),prefix + "| ");
   }
   }
   
   
-}
-
-
-
-
-//not needed
-// This function returns all the files in a directory as an array of Strings  
-String[] listFileNames(String dir) {
-  File file = new File(dir);
-  if (file.isDirectory()) {
-    String names[] = file.list();
-    return names;
-  } else {
-    // If it's not a directory
-    return null;
-  }
 }
