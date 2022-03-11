@@ -20,6 +20,8 @@ Folder listing for path: C:\Users\teach\Documents\GitHub\recursion-lesson
 Challenge 2: Write your own function to recursviely search a path in your file system for a specified file name. 
 Print the file name and the path, for all instances of the file
 
+If you complete the challenges make a pull request at https://github.com/davidaronson13/recursion-lesson
+
 */
 
 import java.util.Arrays;  
