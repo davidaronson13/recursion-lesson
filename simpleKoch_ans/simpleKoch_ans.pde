@@ -7,13 +7,13 @@
  */
 
 void setup() {
-  size(400, 400);
+  size(800, 800);
   background(200);
 }
 
 void draw() {
-  translate(0,300);
-  koch(3,400);
+  translate(0,600);
+  koch(3,800);
 }
 
 void koch(int order, int size){
